@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", "Noto Sans TC", sans-serif;
+	box-sizing: border-box;
+}
+// i {
+// 	font-size: 2rem;
+// 	font-weight: 600;
+// }
+// .myNavbar {
+// }
+.SOPForm-page {
+	.list {
+		li {
+			list-style: none;
+			padding: 0.5rem 1.2rem;
+			width: 100%;
+			border: #999 solid 1px;
+			border-radius: 2rem;
+			transition: all 0.3s;
+			margin: 1.2rem 0;
+			cursor: pointer;
+			&:hover {
+				background-color: #0002;
+			}
+			&.done {
+				background-color: #0004;
+				color: #000;
+				text-decoration: line-through;
+				transition: all 0.3s;
+				padding: 0.2rem 1.2rem;
+			}
+		}
+	}
+}
+
+.punch-page {
+	.clock {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 14rem;
+		height: 14rem;
+		border-radius: 50%;
+		color: #609708;
+		font-weight: 600;
+		border: 6px solid #609708;
+		transition: all 0.3s;
+		p {
+			font-weight: 500;
+			color: #333;
+			margin: 0;
+		}
+		span {
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+	.clock-btn {
+		cursor: pointer;
+		text-align: center;
+		color: #fff;
+		padding: 0.5rem;
+		width: 11rem;
+		// letter-spacing: 2px;
+		font-weight: 500;
+		font-size: 1.4rem;
+		border-radius: 2rem;
+		background-color: #74b50a;
+		transition: all 0.3s;
+	}
+	.status {
+		font-size: 1.1rem;
+		transition: all 0.3s;
+		span {
+			transition: all 0.3s;
+			font-weight: 500;
+		}
+	}
+	.name {
+		font-size: 2rem;
+	}
+	.green {
+		.clock {
+			color: #609708;
+			border: 6px solid #609708;
+		}
+		.clock-btn {
+			background-color: #74b50a;
+		}
+		.status {
+			span {
+				color: #d18a06;
+			}
+		}
+	}
+	.red {
+		.clock {
+			color: #d18a06;
+			border: 6px solid #d18a06;
+		}
+		.clock-btn {
+			background-color: #d18a06;
+		}
+		.status {
+			span {
+				color: #74b50a;
+			}
+		}
+	}
+}
+.purchase-page {
+	.purchase-details {
+		.form-floating {
+			.form-control,
+			.form-select {
+				height: calc(2.8rem + 3px);
+			}
+			& > .form-select,
+			& > .form-control {
+				padding-top: 1.1rem;
+				padding-bottom: 0.3rem;
+			}
+			& > label {
+				top: -0.3rem;
+			}
+		}
+	}
+}
+.orders-page {
+	.order-card {
+		.order-card-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 2.5rem;
+			height: 2.5rem;
+			font-size: 1.35rem;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: all 0.3s;
+			color: red;
+			&:hover {
+				transition: all 0.2s;
+				background-color: #ddd;
+				color: green;
+			}
+		}
+		.order-card-details {
+			height: 25vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+	}
+}
+.form-control,
+.form-select,
+.btn {
+	border-radius: 1.2rem;
+	box-shadow: none !important;
+}
+
+.card,
+.dropdown-menu {
+	padding: 0.5rem;
+	border-radius: 2rem;
+	background-color: #fff8;
+	backdrop-filter: blur(50px);
+	box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 0.3);
+	color: #000;
+	filter: hue-rotate(190deg);
+	table {
+		color: #000;
+	}
+	.card-header {
+		background-color: #0000;
+	}
+	&.dropdown-menu {
+		border-radius: 0.5rem;
+		box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.2);
+		a {
+			margin: 0.5rem 0;
+			padding: 0.5rem 0.5rem;
+			transition: 0.3s all ease;
+			border-radius: 0.5rem;
+			&.active {
+				color: #fff !important;
+				background-color: #555;
+				&:hover {
+					cursor: default;
+					background-color: #555;
+				}
+			}
+			&:hover {
+				background-color: #ccc;
+			}
+		}
+	}
+}
+.dataTables_wrapper {
+	overflow-x: auto;
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
